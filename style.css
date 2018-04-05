@@ -1,0 +1,26 @@
+* {
+	box-sizing: border-box;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+h1 {
+	text-align: center;
+	
+	font-size: 48px;
+}
+
+#comedian-input {
+	width: 200px;
+	height: 35px;
+	margin: 5px 0;
+}
+
+label[for="comedian-input"] {
+	font-size: 24px;
+}
+
+.btn-info {
+	margin: 10px;
+}
