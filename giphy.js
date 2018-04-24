@@ -5,8 +5,11 @@ $(document).ready(function() {
 
    
     function createButton(){
-        for (var i = 0; i < comics.lenght; i++){
-            var b = $('<button .btn-info>');
+        console.log(comics.length);
+        for (var i = 0; i < comics.length; i++){
+            console.log('test');
+            var b = $('<button>', {"class": ".btn-info"});
+            console.log(b);
             b.addClass('comedian');
             b.attr('data-name', comics[i]);
             b.text(comics[i]);
@@ -14,6 +17,8 @@ $(document).ready(function() {
             $('#comedianButton').append(b);
         }
     }
+
+    
 
     $('#addComedian').on('click', function(){
         var comedian = $('comedian-input').val();
